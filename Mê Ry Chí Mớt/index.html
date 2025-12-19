@@ -369,7 +369,7 @@
                 photoMeshes.forEach((mesh, i) => {
                     if (i === selectedIndex) {
                         mesh.position.lerp(new THREE.Vector3(0, 0, 60), 0.1);
-                        mesh.scale.lerp(new THREE.Vector3(6, 6, 6), 0.1);
+                        mesh.scale.lerp(new THREE.Vector3(2, 2, 2), 0.1);
                         mesh.lookAt(camera.position);
                         mesh.rotation.z = 0;
                     } else {
