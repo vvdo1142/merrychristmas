@@ -86,7 +86,7 @@
         // ==========================================
         // 1. RESOURCES CONFIG Vandiep
         // ==========================================
-        const MUSIC_URL = "./audio.mp3";
+        const MUSIC_URL = "./audio1.mp3";
         let bgMusic = new Audio(MUSIC_URL);
         bgMusic.loop = true; bgMusic.volume = 1.0;
 
@@ -463,7 +463,7 @@
                 photoMeshes.forEach((mesh, i) => {
                     if (i === selectedIndex) {
                         mesh.position.lerp(new THREE.Vector3(0, 0, 60), 0.1);
-                        mesh.scale.lerp(new THREE.Vector3(5, 5, 5), 0.1);
+                        mesh.scale.lerp(new THREE.Vector3(3, 3, 3), 0.1);
                         mesh.lookAt(camera.position); mesh.rotation.z = 0;
                     } else {
                         mesh.scale.lerp(new THREE.Vector3(0,0,0), 0.1);
